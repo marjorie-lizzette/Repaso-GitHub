@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace Ejercicios_UtilizandoGitHub
 {
@@ -16,10 +17,22 @@ namespace Ejercicios_UtilizandoGitHub
         {
             InitializeComponent();
         }
+        const int kTAM = 10;
+        int[] vector = new int[kTAM];
 
+        void leerVector(int[] vector)
+        {
+            
+            for (int i = 0; i < vector.Length; i++)
+            {
+                vector[i] = int.Parse(Interaction.InputBox("Introduz el elemento:" + i));
+                
+
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-
+            leerVector(vector);
         }
     }
 }
