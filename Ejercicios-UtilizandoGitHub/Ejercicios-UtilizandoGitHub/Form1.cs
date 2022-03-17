@@ -30,25 +30,9 @@ namespace Ejercicios_UtilizandoGitHub
 
             }
         }
-
-        string MostrarVector(int[] vector)
-        {
-            string texto;
-            texto = "Los elementos del vector son:\n";
-            for (int i = 0; i < vector.Length; i++)
-            {
-                texto = texto + vector[i] + ",";
-            }
-            return texto;
-        }
         private void button1_Click(object sender, EventArgs e)
         {
             leerVector(vector);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
